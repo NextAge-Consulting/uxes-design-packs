@@ -1,0 +1,20 @@
+{
+  "files": [
+    "references/confirm-before-write.md"
+  ],
+  "pieces": [
+    "review-dialog"
+  ],
+  "carriers": [
+    "review-dialog"
+  ],
+  "atoms": [],
+  "roles": [],
+  "packages": {},
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {},
+  "imports": {}
+}

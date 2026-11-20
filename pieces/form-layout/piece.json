@@ -1,0 +1,33 @@
+{
+  "files": [
+    "references/form-layout.md"
+  ],
+  "pieces": [
+    "FormActions",
+    "FormShell",
+    "breadcrumb",
+    "browse-paging",
+    "card-grid",
+    "child-list",
+    "detail-panel",
+    "entity-modal",
+    "fact-list",
+    "field-card",
+    "prompt-dialog",
+    "read-only-field",
+    "record-header",
+    "stat-readout",
+    "stat-row",
+    "subsection"
+  ],
+  "carriers": [],
+  "atoms": [],
+  "roles": [],
+  "packages": {},
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {},
+  "imports": {}
+}

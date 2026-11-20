@@ -1,0 +1,3 @@
+| Atom | Use for | Status |
+|---|---|---|
+| `fields` | The bound field set: `TextField`, `TextAreaField` (grows with its text), `SelectField`, `ComboboxField` (a list too long for a Select, filtered as you type), `SwitchField` (on or off, its one label beside it; `confirmOn` asks before it turns on; `caption` sits above it in a row of captioned fields; `bare` is the switch alone under a grid's column heading), `OptionSwitchField` (`OptionSwitch` bound to a field), `DateInputField` (a `YYYY-MM-DD` date, clearable to none), `FigureField` (an amount with its unit, held as the text typed; `money` sets the $ and reads dollars and cents once the box is left) | approved |

@@ -1,0 +1,339 @@
+{
+  "files": [
+    "references/date-entry.md",
+    "packages/ui/src/components/date-field.tsx",
+    "packages/ui/src/components/date-segments.tsx",
+    "packages/ui/src/components/time-field.tsx",
+    "packages/ui/src/components/ui/calendar.tsx"
+  ],
+  "pieces": [
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "size": [
+            "icon"
+          ],
+          "variant": [
+            "ghost",
+            "link"
+          ]
+        }
+      }
+    },
+    {
+      "name": "input",
+      "file": "packages/ui/src/components/ui/input.tsx",
+      "exports": [
+        "fieldVariants"
+      ],
+      "piece": "input",
+      "uses": {
+        "fieldVariants": {
+          "part": [
+            "shell"
+          ]
+        }
+      }
+    },
+    {
+      "name": "label",
+      "file": "packages/ui/src/components/ui/label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "piece": "label"
+    },
+    {
+      "name": "popover",
+      "file": "packages/ui/src/components/ui/popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverContent",
+        "PopoverTrigger"
+      ],
+      "piece": "popover",
+      "uses": {
+        "PopoverContent": {
+          "align": [
+            "end"
+          ],
+          "inset": [
+            "flush"
+          ]
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--accent",
+      "purpose": "a highlighted menu row in an overlay; the light outline and ghost hovers take it",
+      "classes": [
+        "bg-accent"
+      ]
+    },
+    {
+      "name": "--accent-foreground",
+      "purpose": "text on an accent surface",
+      "classes": [
+        "text-accent-foreground"
+      ]
+    },
+    {
+      "name": "--background",
+      "purpose": "the document's ground beneath the app shell, which paints `surface` over it, and the resting fill of an outline button and a switch thumb — never an overlay's fill",
+      "classes": [
+        "bg-background"
+      ]
+    },
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--disabled-foreground",
+      "purpose": "text and icons on a disabled control",
+      "classes": [
+        "text-disabled-foreground"
+      ]
+    },
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "text-feedback-danger"
+      ]
+    },
+    {
+      "name": "--ghost-hover",
+      "purpose": "a borderless (ghost) control under the pointer",
+      "classes": [
+        "bg-ghost-hover"
+      ]
+    },
+    {
+      "name": "--input",
+      "purpose": "the border of a field — 3:1 against the card and the canvas, so a field's edge is seen",
+      "classes": [
+        "border-input"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--popover",
+      "purpose": "every true overlay — dialog, popover, dropdown — with shadow-overlay",
+      "classes": [
+        "bg-popover"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "bg-primary"
+      ]
+    },
+    {
+      "name": "--primary-foreground",
+      "purpose": "text and icons on a primary fill",
+      "classes": [
+        "text-primary-foreground"
+      ]
+    },
+    {
+      "name": "--primary-hover",
+      "purpose": "a primary fill under the pointer",
+      "classes": [
+        "bg-primary-hover"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control",
+        "rounded-l-control",
+        "rounded-r-control"
+      ]
+    },
+    {
+      "name": "--radius-stamp",
+      "purpose": "a mark inside content: a badge, a match highlight, a checkbox",
+      "classes": [
+        "rounded-stamp"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "border-ring",
+        "ring-ring/50"
+      ]
+    },
+    {
+      "name": "--size-control",
+      "purpose": "a field, a default button; taller under a touch pointer",
+      "classes": [
+        "h-control"
+      ],
+      "value": "36px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-field-inset",
+      "purpose": "a field's text in from its side edges — and the inset that lines plain figures up with a typed one",
+      "classes": [
+        "pl-field-inset"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body",
+        "type-metadata"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "font-emphasis"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-line",
+      "purpose": "",
+      "classes": [
+        "border-line"
+      ]
+    },
+    {
+      "name": "border-t-line",
+      "purpose": "",
+      "classes": [
+        "border-t-line"
+      ]
+    },
+    {
+      "name": "scroll-region",
+      "purpose": "A region that scrolls vertically inside its own box, with the bar hidden. `position: relative` is load-bearing: without it an `sr-only` label inside the region is positioned against the page and gives the whole screen a scrollbar. Use this — never a bare `overflow-y-auto`.",
+      "classes": [
+        "scroll-region"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-metadata",
+      "purpose": "the secondary line beside or under a title — an email, a count, a range",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "@internationalized/date": "3.12.4",
+    "lucide-react": "0.563.0",
+    "react": "19.3.1",
+    "react-aria": "3.53.1",
+    "react-day-picker": "10.0.2",
+    "react-stately": "3.51.0"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/date-field": "packages/ui/src/components/date-field.tsx",
+    "@design-pack/ui/components/date-segments": "packages/ui/src/components/date-segments.tsx",
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/calendar": "packages/ui/src/components/ui/calendar.tsx",
+    "@design-pack/ui/components/ui/input": "packages/ui/src/components/ui/input.tsx",
+    "@design-pack/ui/components/ui/label": "packages/ui/src/components/ui/label.tsx",
+    "@design-pack/ui/components/ui/popover": "packages/ui/src/components/ui/popover.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

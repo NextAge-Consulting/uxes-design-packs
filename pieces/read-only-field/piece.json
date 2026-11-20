@@ -1,0 +1,88 @@
+{
+  "files": [
+    "packages/ui/src/components/read-only-field.tsx"
+  ],
+  "pieces": [
+    "field"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "input",
+      "file": "packages/ui/src/components/ui/input.tsx",
+      "exports": [
+        "FigureInput",
+        "Input"
+      ],
+      "piece": "input"
+    },
+    {
+      "name": "label",
+      "file": "packages/ui/src/components/ui/label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "piece": "label"
+    }
+  ],
+  "roles": [
+    {
+      "name": "--line-height-caption",
+      "purpose": "the 11px and 12px roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-hint"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-hint"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-hint"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-hint",
+      "purpose": "help beneath a control, and a tooltip's text",
+      "classes": [
+        "type-hint"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/field": "packages/ui/src/components/field.tsx",
+    "@design-pack/ui/components/ui/input": "packages/ui/src/components/ui/input.tsx",
+    "@design-pack/ui/components/ui/label": "packages/ui/src/components/ui/label.tsx"
+  }
+}

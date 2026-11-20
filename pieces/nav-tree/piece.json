@@ -1,0 +1,313 @@
+{
+  "files": [
+    "packages/ui/src/components/app-shell/nav-tree.tsx",
+    "packages/ui/src/components/app-shell/nav-types.tsx"
+  ],
+  "pieces": [
+    "nav-tree-favorites",
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "badge",
+      "file": "packages/ui/src/components/ui/badge.tsx",
+      "exports": [
+        "Badge"
+      ],
+      "piece": "badge"
+    },
+    {
+      "name": "popover",
+      "file": "packages/ui/src/components/ui/popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverContent",
+        "PopoverTrigger"
+      ],
+      "piece": "popover",
+      "uses": {
+        "PopoverContent": {
+          "align": [
+            "start"
+          ],
+          "inset": [
+            "list"
+          ],
+          "side": [
+            "right"
+          ]
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "text-feedback-danger"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body",
+        "type-nav-section"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-hint",
+        "type-nav-group",
+        "type-nav-item"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--motion-easing",
+      "purpose": "the one easing every transition uses",
+      "classes": [
+        "ease-(--motion-easing)"
+      ]
+    },
+    {
+      "name": "--motion-state",
+      "purpose": "a state changing: a hover, a chevron turning, a rail resizing",
+      "classes": [
+        "duration-(--motion-state)"
+      ]
+    },
+    {
+      "name": "--muted",
+      "purpose": "a quiet fill, and a row under the pointer inside a card — a nav item, an expandable row",
+      "classes": [
+        "bg-muted"
+      ]
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--radius-pill",
+      "purpose": "a fully round end: an avatar, a switch, a radio",
+      "classes": [
+        "rounded-pill"
+      ]
+    },
+    {
+      "name": "--sidebar",
+      "purpose": "the navigation rail",
+      "classes": [
+        "bg-sidebar"
+      ]
+    },
+    {
+      "name": "--sidebar-foreground",
+      "purpose": "text in the navigation rail",
+      "classes": [
+        "text-sidebar-foreground"
+      ]
+    },
+    {
+      "name": "--sidebar-primary",
+      "purpose": "the marker on the open screen in the navigation rail — a bar or an icon, never a fill behind text",
+      "classes": [
+        "bg-sidebar-primary",
+        "text-sidebar-primary"
+      ]
+    },
+    {
+      "name": "--size-nav-item-affix-inset",
+      "purpose": "a rail item's text in from its right edge, clear of the star set there",
+      "classes": [
+        "pr-nav-item-affix-inset"
+      ],
+      "value": "calc(var(--size-control-affix) + 4px)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-nav-item-indent",
+      "purpose": "a rail item's text in from the rail's left edge, a step in from the subheading above it",
+      "classes": [
+        "pl-nav-item-indent"
+      ],
+      "value": "40px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-hint",
+        "type-nav-group",
+        "type-nav-item"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-13",
+      "purpose": "",
+      "classes": [
+        "type-nav-section"
+      ],
+      "value": "13px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body",
+        "type-hint",
+        "type-nav-item"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "type-nav-group"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-nav-section"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "font-strong"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-r-frame",
+      "purpose": "",
+      "classes": [
+        "border-r-frame"
+      ]
+    },
+    {
+      "name": "scroll-region",
+      "purpose": "A region that scrolls vertically inside its own box, with the bar hidden. `position: relative` is load-bearing: without it an `sr-only` label inside the region is positioned against the page and gives the whole screen a scrollbar. Use this — never a bare `overflow-y-auto`.",
+      "classes": [
+        "scroll-region"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-hint",
+      "purpose": "help beneath a control, and a tooltip's text",
+      "classes": [
+        "type-hint"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-nav-group",
+      "purpose": "a group heading inside a module in the nav rail",
+      "classes": [
+        "type-nav-group"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-emphasis); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-nav-item",
+      "purpose": "a screen link in the nav rail",
+      "classes": [
+        "type-nav-item"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-nav-section",
+      "purpose": "a module row in the nav rail, and a flyout's module title",
+      "classes": [
+        "type-nav-section"
+      ],
+      "value": "font-size: var(--step-13); font-weight: var(--weight-heading); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/badge": "packages/ui/src/components/ui/badge.tsx",
+    "@design-pack/ui/components/ui/popover": "packages/ui/src/components/ui/popover.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

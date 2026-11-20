@@ -1,0 +1,23 @@
+{
+  "files": [
+    "references/boolean-fields.md"
+  ],
+  "pieces": [
+    "facet-checklist",
+    "fields",
+    "option-switch"
+  ],
+  "carriers": [
+    "fields",
+    "option-switch"
+  ],
+  "atoms": [],
+  "roles": [],
+  "packages": {},
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {},
+  "imports": {}
+}

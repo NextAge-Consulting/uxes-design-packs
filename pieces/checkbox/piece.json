@@ -1,0 +1,113 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/checkbox.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--disabled",
+      "purpose": "the fill of a disabled control",
+      "classes": [
+        "bg-disabled"
+      ]
+    },
+    {
+      "name": "--disabled-border",
+      "purpose": "the border of a disabled control",
+      "classes": [
+        "border-disabled-border"
+      ]
+    },
+    {
+      "name": "--disabled-foreground",
+      "purpose": "text and icons on a disabled control",
+      "classes": [
+        "text-disabled-foreground"
+      ]
+    },
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "border-feedback-danger",
+        "ring-feedback-danger/20"
+      ]
+    },
+    {
+      "name": "--field",
+      "purpose": "a field's resting fill — the card shows through in light",
+      "classes": [
+        "bg-field"
+      ]
+    },
+    {
+      "name": "--input",
+      "purpose": "the border of a field — 3:1 against the card and the canvas, so a field's edge is seen",
+      "classes": [
+        "border-input"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "bg-primary",
+        "border-primary"
+      ]
+    },
+    {
+      "name": "--primary-foreground",
+      "purpose": "text and icons on a primary fill",
+      "classes": [
+        "text-primary-foreground"
+      ]
+    },
+    {
+      "name": "--radius-stamp",
+      "purpose": "a mark inside content: a badge, a match highlight, a checkbox",
+      "classes": [
+        "rounded-stamp"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "border-ring",
+        "ring-ring/50"
+      ]
+    },
+    {
+      "name": "border-line",
+      "purpose": "",
+      "classes": [
+        "border-line"
+      ]
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "radix-ui": "1.8.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

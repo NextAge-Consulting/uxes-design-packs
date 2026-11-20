@@ -1,0 +1,3 @@
+| Component | Use for | Type | Status |
+|---|---|---|---|
+| `BrowseTable` | Every list as a table: headings that sort, and size by dragging their right edge or ← →; the person's columns, shown, hidden and ordered from the button at the header's end and saved for them, after any the list shows on its own (`automatic`); the actions column pinned at the right edge; rows that open in place (`expand`); ↑ ↓ between rows, Enter opens one, focus back on the row last opened; in a card's rows slot with `inCard` (a child list); placeholders until the first rows arrive, and a failure with Try Again | DataTable | approved |

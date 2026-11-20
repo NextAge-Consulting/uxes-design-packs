@@ -1,0 +1,56 @@
+{
+  "files": [
+    "packages/ui/src/components/confirm-dialog.tsx"
+  ],
+  "pieces": [
+    "loading-states",
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "variant": [
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "dialog",
+      "file": "packages/ui/src/components/ui/dialog.tsx",
+      "exports": [
+        "Dialog",
+        "DialogContent",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogHeader",
+        "DialogTitle"
+      ],
+      "piece": "dialog"
+    }
+  ],
+  "roles": [],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/busy-status": "packages/ui/src/components/busy-status.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/dialog": "packages/ui/src/components/ui/dialog.tsx"
+  }
+}

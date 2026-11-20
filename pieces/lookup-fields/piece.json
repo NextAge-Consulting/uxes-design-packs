@@ -1,0 +1,284 @@
+{
+  "files": [
+    "references/lookup-fields.md",
+    "packages/ui/src/components/combobox.tsx"
+  ],
+  "pieces": [
+    "table-row-actions"
+  ],
+  "carriers": [
+    "fields"
+  ],
+  "atoms": [
+    {
+      "name": "command",
+      "file": "packages/ui/src/components/ui/command.tsx",
+      "exports": [
+        "Command",
+        "CommandEmpty",
+        "CommandItem",
+        "CommandList"
+      ],
+      "piece": "command",
+      "uses": {
+        "CommandItem": {
+          "kind": [
+            "action",
+            "detailed"
+          ]
+        }
+      }
+    },
+    {
+      "name": "input",
+      "file": "packages/ui/src/components/ui/input.tsx",
+      "exports": [
+        "fieldVariants"
+      ],
+      "piece": "input",
+      "uses": {
+        "fieldVariants": {
+          "part": [
+            "shell"
+          ]
+        }
+      }
+    },
+    {
+      "name": "popover",
+      "file": "packages/ui/src/components/ui/popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverAnchor",
+        "PopoverContent"
+      ],
+      "piece": "popover",
+      "uses": {
+        "PopoverContent": {
+          "align": [
+            "start"
+          ],
+          "inset": [
+            "flush"
+          ]
+        }
+      }
+    },
+    {
+      "name": "spinner",
+      "file": "packages/ui/src/components/ui/spinner.tsx",
+      "exports": [
+        "Spinner"
+      ],
+      "piece": "spinner"
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-form-control",
+        "type-state-message"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-badge",
+        "type-metadata"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-heading",
+      "purpose": "card, section and surface headings, and the text typed into a field",
+      "classes": [
+        "type-form-control"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--match",
+      "purpose": "the part of a label that matched what the user typed",
+      "classes": [
+        "bg-match"
+      ]
+    },
+    {
+      "name": "--match-foreground",
+      "purpose": "text on a match highlight",
+      "classes": [
+        "text-match-foreground"
+      ]
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--popover",
+      "purpose": "every true overlay — dialog, popover, dropdown — with shadow-overlay",
+      "classes": [
+        "bg-popover"
+      ]
+    },
+    {
+      "name": "--radius-stamp",
+      "purpose": "a mark inside content: a badge, a match highlight, a checkbox",
+      "classes": [
+        "rounded-stamp"
+      ]
+    },
+    {
+      "name": "--size-control",
+      "purpose": "a field, a default button; taller under a touch pointer",
+      "classes": [
+        "h-control"
+      ],
+      "value": "36px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-badge",
+        "type-metadata"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-form-control",
+        "type-state-message"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-16",
+      "purpose": "",
+      "classes": [
+        "type-form-control"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-form-control",
+        "type-metadata",
+        "type-state-message"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "font-heading"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "type-badge"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-t-frame",
+      "purpose": "",
+      "classes": [
+        "border-t-frame"
+      ]
+    },
+    {
+      "name": "type-badge",
+      "purpose": "a compact status or count mark",
+      "classes": [
+        "type-badge"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-strong); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-form-control",
+      "purpose": "the text a user types, large enough below the tablet breakpoint that a phone does not zoom the page on focus",
+      "classes": [
+        "type-form-control"
+      ]
+    },
+    {
+      "name": "type-metadata",
+      "purpose": "the secondary line beside or under a title — an email, a count, a range",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-state-message",
+      "purpose": "what a region says when it has nothing, or is still arriving",
+      "classes": [
+        "type-state-message"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "cmdk": "1.1.1",
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/command": "packages/ui/src/components/ui/command.tsx",
+    "@design-pack/ui/components/ui/input": "packages/ui/src/components/ui/input.tsx",
+    "@design-pack/ui/components/ui/popover": "packages/ui/src/components/ui/popover.tsx",
+    "@design-pack/ui/components/ui/spinner": "packages/ui/src/components/ui/spinner.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

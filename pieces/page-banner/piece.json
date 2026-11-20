@@ -1,0 +1,66 @@
+{
+  "files": [
+    "packages/ui/src/components/page-banner.tsx"
+  ],
+  "pieces": [
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "alert",
+      "file": "packages/ui/src/components/ui/alert.tsx",
+      "exports": [
+        "Alert",
+        "AlertDescription",
+        "AlertIcon",
+        "AlertTitle"
+      ],
+      "piece": "alert"
+    }
+  ],
+  "roles": [
+    {
+      "name": "--gap-related",
+      "purpose": "buttons in a row, options in a group",
+      "classes": [
+        "gap-related"
+      ],
+      "value": "8px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--gap-tight",
+      "purpose": "a title and its subline",
+      "classes": [
+        "gap-y-tight"
+      ],
+      "value": "4px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "font-emphasis"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/alert": "packages/ui/src/components/ui/alert.tsx"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "files": [
+    "packages/ui/src/components/subsection.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [],
+  "roles": [
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--line-height-heading",
+      "purpose": "card, section and surface headings, and the text typed into a field",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-18",
+      "purpose": "",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "18px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-t-frame",
+      "purpose": "",
+      "classes": [
+        "border-t-frame"
+      ]
+    },
+    {
+      "name": "type-section-heading",
+      "purpose": "names a region inside a card or panel — a form section, a group of settings",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "font-size: var(--step-18); font-weight: var(--weight-heading); line-height: var(--line-height-heading)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {}
+}

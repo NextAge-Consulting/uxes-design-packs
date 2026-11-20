@@ -1,0 +1,28 @@
+{
+  "files": [
+    "packages/web/src/form/UnsavedChangesGuard.tsx",
+    "packages/web/src/form/unsavedWork.ts"
+  ],
+  "pieces": [
+    "confirm-dialog",
+    "inline-form",
+    "saving"
+  ],
+  "carriers": [],
+  "atoms": [],
+  "roles": [],
+  "packages": {
+    "@tanstack/react-router": "1.170.46",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/confirm-dialog": "packages/ui/src/components/confirm-dialog.tsx"
+  }
+}

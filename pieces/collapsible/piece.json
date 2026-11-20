@@ -1,0 +1,21 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/collapsible.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [],
+  "roles": [],
+  "packages": {
+    "radix-ui": "1.8.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {}
+}

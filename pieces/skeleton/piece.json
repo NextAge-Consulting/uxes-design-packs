@@ -1,0 +1,64 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/skeleton.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--placeholder",
+      "purpose": "a loading placeholder standing in for content — plainly visible on the page and on a card",
+      "classes": [
+        "bg-placeholder"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--size-control",
+      "purpose": "a field, a default button; 44px under a touch pointer",
+      "classes": [
+        "h-control"
+      ],
+      "value": "36px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-row",
+      "purpose": "a table row",
+      "classes": [
+        "h-row"
+      ],
+      "value": "36px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "class-variance-authority": "0.7.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

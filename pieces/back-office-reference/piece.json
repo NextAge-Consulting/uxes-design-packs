@@ -1,0 +1,402 @@
+{
+  "files": [
+    "packages/ui/src/components/app-shell/theme-toggle.tsx",
+    "packages/web/src/theme/useTheme.ts",
+    "packages/web/src/reference/BackOfficeShell.tsx",
+    "packages/web/src/reference/RecordReference.tsx",
+    "packages/web/src/reference/BrowseReference.tsx",
+    "packages/web/src/reference/FormReference.tsx"
+  ],
+  "pieces": [
+    "AccountMenu",
+    "app-shell",
+    "bar-chart",
+    "breadcrumb",
+    "browse-columns",
+    "browse-filtering",
+    "browse-layout",
+    "browse-paging",
+    "browse-toolbar",
+    "BrowseTable",
+    "card-grid",
+    "child-list",
+    "confirm-dialog",
+    "date-entry",
+    "detail-panel",
+    "empty-state",
+    "entity-modal",
+    "expandable-row",
+    "facet-checklist",
+    "fact-list",
+    "field",
+    "field-card",
+    "fields",
+    "form-layout",
+    "FormActions",
+    "FormShell",
+    "help-popover",
+    "line-chart",
+    "loading-states",
+    "lookup-fields",
+    "nav-tree",
+    "page-banner",
+    "permission-masked-fields",
+    "prompt-dialog",
+    "read-only-field",
+    "record-header",
+    "review-dialog",
+    "row-actions-menu",
+    "RowActions",
+    "stat-readout",
+    "stat-row",
+    "subsection",
+    "summary-list",
+    "table-row-actions",
+    "UnsavedChangesGuard",
+    "useBrowseData"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "alert",
+      "file": "packages/ui/src/components/ui/alert.tsx",
+      "exports": [
+        "Alert",
+        "AlertDescription"
+      ],
+      "piece": "alert"
+    },
+    {
+      "name": "badge",
+      "file": "packages/ui/src/components/ui/badge.tsx",
+      "exports": [
+        "Badge"
+      ],
+      "piece": "badge"
+    },
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button"
+    },
+    {
+      "name": "card",
+      "file": "packages/ui/src/components/ui/card.tsx",
+      "exports": [
+        "Card",
+        "CardAction",
+        "CardContent",
+        "CardHeader",
+        "CardTitle"
+      ],
+      "piece": "card"
+    },
+    {
+      "name": "checkbox",
+      "file": "packages/ui/src/components/ui/checkbox.tsx",
+      "exports": [
+        "Checkbox"
+      ],
+      "piece": "checkbox"
+    },
+    {
+      "name": "dropdown-menu",
+      "file": "packages/ui/src/components/ui/dropdown-menu.tsx",
+      "exports": [
+        "DropdownMenuItem"
+      ],
+      "piece": "dropdown-menu"
+    },
+    {
+      "name": "label",
+      "file": "packages/ui/src/components/ui/label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "piece": "label"
+    },
+    {
+      "name": "table",
+      "file": "packages/ui/src/components/ui/table.tsx",
+      "exports": [
+        "Table",
+        "TableBody",
+        "TableCell",
+        "TableHead",
+        "TableHeader",
+        "TableRow"
+      ],
+      "piece": "table"
+    },
+    {
+      "name": "tooltip",
+      "file": "packages/ui/src/components/ui/tooltip.tsx",
+      "exports": [
+        "TooltipProvider"
+      ],
+      "piece": "tooltip"
+    }
+  ],
+  "roles": [
+    {
+      "name": "--card-foreground",
+      "purpose": "text on a card",
+      "classes": [
+        "text-card-foreground"
+      ]
+    },
+    {
+      "name": "--gap-default",
+      "purpose": "field to field, block to block, card to card",
+      "classes": [
+        "gap-default",
+        "gap-y-default"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--gap-related",
+      "purpose": "buttons in a row, options in a group",
+      "classes": [
+        "gap-related"
+      ],
+      "value": "8px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--gap-section",
+      "purpose": "between sections; a form's actions from its last field",
+      "classes": [
+        "gap-x-section"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--gap-tight",
+      "purpose": "a title and its subline",
+      "classes": [
+        "gap-tight"
+      ],
+      "value": "4px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body",
+        "type-row-title"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-metadata",
+        "type-readout-caption"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-solid",
+      "purpose": "a glyph set tight to its own box: a figure, initials",
+      "classes": [
+        "type-figure"
+      ],
+      "value": "1",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text \u2014 hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--page-edge",
+      "purpose": "the page's edge, narrower on a phone than from a tablet up",
+      "classes": [
+        "px-page-edge"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-metadata",
+        "type-readout-caption"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body",
+        "type-row-title"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-24",
+      "purpose": "",
+      "classes": [
+        "type-figure"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body",
+        "type-metadata"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-figure",
+        "type-readout-caption"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "type-row-title"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose \u2014 descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-figure",
+      "purpose": "a derived figure on a readout \u2014 a total, a balance. Tabular figures, so digits align in a column.",
+      "classes": [
+        "type-figure"
+      ],
+      "value": "font-size: var(--step-24); font-weight: var(--weight-heading); line-height: var(--line-height-solid); font-variant-numeric: tabular-nums",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-metadata",
+      "purpose": "the secondary line beside or under a title \u2014 an email, a count, a range",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-readout-caption",
+      "purpose": "names the value beneath it on a readout or a facet tile",
+      "classes": [
+        "type-readout-caption"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-heading); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-row-title",
+      "purpose": "the primary cell of a row, or the name on a list row",
+      "classes": [
+        "type-row-title"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-strong); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "@tanstack/react-form": "1.33.5",
+    "@tanstack/react-query": "5.105.3",
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/app-shell/app-shell": "packages/ui/src/components/app-shell/app-shell.tsx",
+    "@design-pack/ui/components/app-shell/nav-tree": "packages/ui/src/components/app-shell/nav-tree.tsx",
+    "@design-pack/ui/components/app-shell/nav-types": "packages/ui/src/components/app-shell/nav-types.tsx",
+    "@design-pack/ui/components/app-shell/theme-toggle": "packages/ui/src/components/app-shell/theme-toggle.tsx",
+    "@design-pack/ui/components/bar-chart": "packages/ui/src/components/bar-chart.tsx",
+    "@design-pack/ui/components/breadcrumb": "packages/ui/src/components/breadcrumb.tsx",
+    "@design-pack/ui/components/browse-toolbar": "packages/ui/src/components/browse-toolbar.tsx",
+    "@design-pack/ui/components/busy-status": "packages/ui/src/components/busy-status.tsx",
+    "@design-pack/ui/components/card-grid": "packages/ui/src/components/card-grid.tsx",
+    "@design-pack/ui/components/combobox": "packages/ui/src/components/combobox.tsx",
+    "@design-pack/ui/components/confirm-dialog": "packages/ui/src/components/confirm-dialog.tsx",
+    "@design-pack/ui/components/date-field": "packages/ui/src/components/date-field.tsx",
+    "@design-pack/ui/components/detail-panel": "packages/ui/src/components/detail-panel.tsx",
+    "@design-pack/ui/components/empty-state": "packages/ui/src/components/empty-state.tsx",
+    "@design-pack/ui/components/entity-modal": "packages/ui/src/components/entity-modal.tsx",
+    "@design-pack/ui/components/expandable-row": "packages/ui/src/components/expandable-row.tsx",
+    "@design-pack/ui/components/facet-checklist": "packages/ui/src/components/facet-checklist.tsx",
+    "@design-pack/ui/components/fact-list": "packages/ui/src/components/fact-list.tsx",
+    "@design-pack/ui/components/field": "packages/ui/src/components/field.tsx",
+    "@design-pack/ui/components/field-card": "packages/ui/src/components/field-card.tsx",
+    "@design-pack/ui/components/filter-chips": "packages/ui/src/components/filter-chips.tsx",
+    "@design-pack/ui/components/help-popover": "packages/ui/src/components/help-popover.tsx",
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/line-chart": "packages/ui/src/components/line-chart.tsx",
+    "@design-pack/ui/components/modal-shell": "packages/ui/src/components/modal-shell.tsx",
+    "@design-pack/ui/components/page-banner": "packages/ui/src/components/page-banner.tsx",
+    "@design-pack/ui/components/picker-dialog": "packages/ui/src/components/picker-dialog.tsx",
+    "@design-pack/ui/components/prompt-dialog": "packages/ui/src/components/prompt-dialog.tsx",
+    "@design-pack/ui/components/read-only-field": "packages/ui/src/components/read-only-field.tsx",
+    "@design-pack/ui/components/record-header": "packages/ui/src/components/record-header.tsx",
+    "@design-pack/ui/components/restricted-value": "packages/ui/src/components/restricted-value.tsx",
+    "@design-pack/ui/components/review-dialog": "packages/ui/src/components/review-dialog.tsx",
+    "@design-pack/ui/components/row-actions-menu": "packages/ui/src/components/row-actions-menu.tsx",
+    "@design-pack/ui/components/stat-readout": "packages/ui/src/components/stat-readout.tsx",
+    "@design-pack/ui/components/stat-row": "packages/ui/src/components/stat-row.tsx",
+    "@design-pack/ui/components/subsection": "packages/ui/src/components/subsection.tsx",
+    "@design-pack/ui/components/summary-list": "packages/ui/src/components/summary-list.tsx",
+    "@design-pack/ui/components/table-frame": "packages/ui/src/components/table-frame.tsx",
+    "@design-pack/ui/components/time-field": "packages/ui/src/components/time-field.tsx",
+    "@design-pack/ui/components/ui/alert": "packages/ui/src/components/ui/alert.tsx",
+    "@design-pack/ui/components/ui/badge": "packages/ui/src/components/ui/badge.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/card": "packages/ui/src/components/ui/card.tsx",
+    "@design-pack/ui/components/ui/checkbox": "packages/ui/src/components/ui/checkbox.tsx",
+    "@design-pack/ui/components/ui/dropdown-menu": "packages/ui/src/components/ui/dropdown-menu.tsx",
+    "@design-pack/ui/components/ui/label": "packages/ui/src/components/ui/label.tsx",
+    "@design-pack/ui/components/ui/table": "packages/ui/src/components/ui/table.tsx",
+    "@design-pack/ui/components/ui/tooltip": "packages/ui/src/components/ui/tooltip.tsx",
+    "@design-pack/ui/components/view-tabs": "packages/ui/src/components/view-tabs.tsx"
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/button.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--accent-foreground",
+      "purpose": "text on an accent surface",
+      "classes": [
+        "text-accent-foreground"
+      ]
+    },
+    {
+      "name": "--destructive",
+      "purpose": "a destructive action — a delete or discard button, a destructive menu item",
+      "classes": [
+        "bg-destructive",
+        "bg-destructive/10",
+        "ring-destructive/20",
+        "text-destructive"
+      ]
+    },
+    {
+      "name": "--destructive-foreground",
+      "purpose": "text on a destructive fill",
+      "classes": [
+        "text-destructive-foreground"
+      ]
+    },
+    {
+      "name": "--destructive-hover",
+      "purpose": "a destructive fill under the pointer",
+      "classes": [
+        "bg-destructive-hover"
+      ]
+    },
+    {
+      "name": "--disabled",
+      "purpose": "the fill of a disabled control",
+      "classes": [
+        "bg-disabled"
+      ]
+    },
+    {
+      "name": "--disabled-border",
+      "purpose": "the border of a disabled control",
+      "classes": [
+        "border-disabled-border"
+      ]
+    },
+    {
+      "name": "--disabled-foreground",
+      "purpose": "text and icons on a disabled control",
+      "classes": [
+        "text-disabled-foreground"
+      ]
+    },
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "border-feedback-danger",
+        "ring-feedback-danger/20"
+      ]
+    },
+    {
+      "name": "--ghost-hover",
+      "purpose": "a borderless (ghost) control under the pointer",
+      "classes": [
+        "bg-ghost-hover"
+      ]
+    },
+    {
+      "name": "--icon-alert-titled",
+      "purpose": "an alert's icon beside a title and its text — the same line weight, drawn larger",
+      "classes": [
+        "grid-cols-[var(--icon-alert-titled)_minmax(0,1fr)_var(--icon-alert-titled)]",
+        "var(--icon-alert-titled)"
+      ]
+    },
+    {
+      "name": "--icon-body",
+      "purpose": "an icon in a line of body or button text",
+      "classes": [
+        "size-icon-body"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-button-label"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--outline-border",
+      "purpose": "an outline button's border",
+      "classes": [
+        "border-outline-border"
+      ]
+    },
+    {
+      "name": "--outline-fill",
+      "purpose": "an outline button's fill",
+      "classes": [
+        "bg-outline-fill"
+      ]
+    },
+    {
+      "name": "--outline-hover",
+      "purpose": "an outline button under the pointer",
+      "classes": [
+        "bg-outline-hover"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "bg-primary"
+      ]
+    },
+    {
+      "name": "--primary-foreground",
+      "purpose": "text and icons on a primary fill",
+      "classes": [
+        "text-primary-foreground"
+      ]
+    },
+    {
+      "name": "--primary-hover",
+      "purpose": "a primary fill under the pointer",
+      "classes": [
+        "bg-primary-hover"
+      ]
+    },
+    {
+      "name": "--primary-ink",
+      "purpose": "the brand colour as TEXT or a glyph on a surface — a link, a record's mark. The fill above carries white text; in dark it is too deep to read as text itself, so this lifts it.",
+      "classes": [
+        "text-primary-ink"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "border-ring",
+        "ring-ring/50"
+      ]
+    },
+    {
+      "name": "--secondary",
+      "purpose": "the secondary button fill — a neutral grey, distinct from accent",
+      "classes": [
+        "bg-secondary"
+      ]
+    },
+    {
+      "name": "--secondary-foreground",
+      "purpose": "text on a secondary fill",
+      "classes": [
+        "text-secondary-foreground"
+      ]
+    },
+    {
+      "name": "--secondary-hover",
+      "purpose": "a secondary fill under the pointer",
+      "classes": [
+        "bg-secondary-hover"
+      ]
+    },
+    {
+      "name": "--size-control",
+      "purpose": "a field, a default button; 44px under a touch pointer",
+      "classes": [
+        "h-control",
+        "min-h-control",
+        "size-control"
+      ],
+      "value": "36px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-control-affix",
+      "purpose": "a control attached to another element: a field's clear or open, a row's disclosure, a nav item's star, a dialog's close",
+      "classes": [
+        "size-control-affix"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-control-embedded",
+      "purpose": "a control set inside another component's line: a table row, a banner, the pager, a filter panel",
+      "classes": [
+        "h-control-embedded",
+        "size-control-embedded"
+      ],
+      "value": "32px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-button-label"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "type-button-label"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-line",
+      "purpose": "",
+      "classes": [
+        "border-line"
+      ]
+    },
+    {
+      "name": "type-button-label",
+      "purpose": "the text on a button",
+      "classes": [
+        "type-button-label"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-strong); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "class-variance-authority": "0.7.1",
+    "radix-ui": "1.8.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

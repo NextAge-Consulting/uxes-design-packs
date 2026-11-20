@@ -1,0 +1,235 @@
+{
+  "files": [
+    "packages/ui/src/components/app-shell/user-avatar.tsx",
+    "packages/web/src/components/AccountMenu.tsx"
+  ],
+  "pieces": [
+    "loading-states"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "dropdown-menu",
+      "file": "packages/ui/src/components/ui/dropdown-menu.tsx",
+      "exports": [
+        "DropdownMenu",
+        "DropdownMenuContent",
+        "DropdownMenuItem",
+        "DropdownMenuLabel",
+        "DropdownMenuSeparator",
+        "DropdownMenuTrigger"
+      ],
+      "piece": "dropdown-menu",
+      "uses": {
+        "DropdownMenuContent": {
+          "align": [
+            "end"
+          ]
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "text-feedback-danger"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body",
+        "type-row-title"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-solid",
+      "purpose": "a glyph set tight to its own box: a figure, initials",
+      "classes": [
+        "type-initials"
+      ],
+      "value": "1",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "bg-primary"
+      ]
+    },
+    {
+      "name": "--primary-foreground",
+      "purpose": "text and icons on a primary fill",
+      "classes": [
+        "text-primary-foreground"
+      ]
+    },
+    {
+      "name": "--radius-pill",
+      "purpose": "a fully round end: an avatar, a switch, a radio",
+      "classes": [
+        "rounded-pill"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "outline-ring"
+      ]
+    },
+    {
+      "name": "--step-11",
+      "purpose": "the type scale — whole pixels, anchored on 14 (body)",
+      "classes": [
+        "type-initials"
+      ],
+      "value": "11px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body",
+        "type-row-title"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body",
+        "type-metadata"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-initials"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "type-row-title"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job. A frame is a container's edge and the splits and header bands between its sections. A line is a control's edge, an overlay's edge, and the rules between rows or items.",
+      "classes": [
+        "border-frame"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-initials",
+      "purpose": "a person's initials inside an avatar",
+      "classes": [
+        "type-initials"
+      ],
+      "value": "font-size: var(--step-11); font-weight: var(--weight-heading); line-height: var(--line-height-solid)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-metadata",
+      "purpose": "the secondary line beside or under a title — an email, a count, a range",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-row-title",
+      "purpose": "the primary cell of a row, or the name on a list row",
+      "classes": [
+        "type-row-title"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-strong); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/app-shell/user-avatar": "packages/ui/src/components/app-shell/user-avatar.tsx",
+    "@design-pack/ui/components/busy-status": "packages/ui/src/components/busy-status.tsx",
+    "@design-pack/ui/components/ui/dropdown-menu": "packages/ui/src/components/ui/dropdown-menu.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

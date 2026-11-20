@@ -1,0 +1,50 @@
+{
+  "files": [
+    "references/child-list.md",
+    "packages/web/src/browse/useChildPaging.ts",
+    "packages/web/src/components/ChildList.tsx"
+  ],
+  "pieces": [
+    "browse-paging",
+    "browse-toolbar"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "card",
+      "file": "packages/ui/src/components/ui/card.tsx",
+      "exports": [
+        "Card",
+        "CardAction",
+        "CardContent",
+        "CardFooter",
+        "CardHeader",
+        "CardTitle"
+      ],
+      "piece": "card",
+      "uses": {
+        "CardContent": {
+          "inset": [
+            "rows"
+          ]
+        }
+      }
+    }
+  ],
+  "roles": [],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/browse-toolbar": "packages/ui/src/components/browse-toolbar.tsx",
+    "@design-pack/ui/components/ui/card": "packages/ui/src/components/ui/card.tsx"
+  }
+}

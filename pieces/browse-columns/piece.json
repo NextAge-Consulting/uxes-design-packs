@@ -1,0 +1,158 @@
+{
+  "files": [
+    "references/browse-columns.md",
+    "packages/web/src/browse/browseReturn.ts",
+    "packages/web/src/browse/browseSettings.ts",
+    "packages/web/src/browse/useBrowseSettings.ts",
+    "packages/web/src/components/ColumnSettings.tsx"
+  ],
+  "pieces": [
+    "table-row-actions"
+  ],
+  "carriers": [
+    "BrowseTable"
+  ],
+  "atoms": [
+    {
+      "name": "logger",
+      "file": "apps/shared/src/logger.ts",
+      "exports": [
+        "logger"
+      ]
+    },
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "variant": [
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "checkbox",
+      "file": "packages/ui/src/components/ui/checkbox.tsx",
+      "exports": [
+        "Checkbox"
+      ],
+      "piece": "checkbox"
+    },
+    {
+      "name": "label",
+      "file": "packages/ui/src/components/ui/label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "piece": "label",
+      "uses": {
+        "Label": {
+          "kind": [
+            "option"
+          ]
+        }
+      }
+    },
+    {
+      "name": "popover",
+      "file": "packages/ui/src/components/ui/popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverContent",
+        "PopoverTrigger"
+      ],
+      "piece": "popover",
+      "uses": {
+        "PopoverContent": {
+          "align": [
+            "end"
+          ],
+          "inset": [
+            "list"
+          ]
+        }
+      }
+    }
+  ],
+  "roles": [
+    {
+      "name": "--accent",
+      "purpose": "a highlighted menu row in an overlay; the light outline and ghost hovers take it",
+      "classes": [
+        "bg-accent"
+      ]
+    },
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "outline-ring"
+      ]
+    },
+    {
+      "name": "border-t-line",
+      "purpose": "",
+      "classes": [
+        "border-t-line"
+      ]
+    },
+    {
+      "name": "scroll-region",
+      "purpose": "A region that scrolls vertically inside its own box, with the bar hidden. `position: relative` is load-bearing: without it an `sr-only` label inside the region is positioned against the page and gives the whole screen a scrollbar. Use this — never a bare `overflow-y-auto`.",
+      "classes": [
+        "scroll-region"
+      ]
+    }
+  ],
+  "packages": {
+    "@dnd-kit/core": "6.3.1",
+    "@dnd-kit/sortable": "10.0.0",
+    "@tanstack/react-query": "5.105.3",
+    "lucide-react": "0.563.0",
+    "react": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "apps/shared": "@design-pack/shared",
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/shared/logger": "apps/shared/src/logger.ts",
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/checkbox": "packages/ui/src/components/ui/checkbox.tsx",
+    "@design-pack/ui/components/ui/label": "packages/ui/src/components/ui/label.tsx",
+    "@design-pack/ui/components/ui/popover": "packages/ui/src/components/ui/popover.tsx"
+  }
+}

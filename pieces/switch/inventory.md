@@ -1,0 +1,3 @@
+| Atom | Status |
+|---|---|
+| `switch` | approved |

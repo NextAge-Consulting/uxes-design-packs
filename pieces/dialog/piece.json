@@ -1,0 +1,196 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/dialog.tsx"
+  ],
+  "pieces": [
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "variant": [
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--gap-related",
+      "purpose": "buttons in a row, options in a group",
+      "classes": [
+        "gap-related"
+      ],
+      "value": "8px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-title",
+      "purpose": "a browse's or a dialog's title",
+      "classes": [
+        "type-surface-title"
+      ],
+      "value": "28px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--motion-overlay",
+      "purpose": "an overlay opening or closing",
+      "classes": [
+        "duration-(--motion-overlay)"
+      ]
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--popover",
+      "purpose": "every true overlay — dialog, popover, dropdown — with shadow-overlay",
+      "classes": [
+        "bg-popover"
+      ]
+    },
+    {
+      "name": "--popover-foreground",
+      "purpose": "text on an overlay",
+      "classes": [
+        "text-popover-foreground"
+      ]
+    },
+    {
+      "name": "--radius-container",
+      "purpose": "a container that HOLDS content: a card, a dialog, a menu",
+      "classes": [
+        "rounded-container"
+      ]
+    },
+    {
+      "name": "--scrim",
+      "purpose": "the dimming layer behind a modal dialog",
+      "classes": [
+        "bg-scrim"
+      ]
+    },
+    {
+      "name": "--shadow-overlay",
+      "purpose": "the lift of a true overlay — a dialog, dropdown or popover",
+      "classes": [
+        "shadow-overlay"
+      ]
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-18",
+      "purpose": "",
+      "classes": [
+        "type-surface-title"
+      ],
+      "value": "18px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "type-surface-title"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-line",
+      "purpose": "",
+      "classes": [
+        "border-line"
+      ]
+    },
+    {
+      "name": "scroll-region",
+      "purpose": "A region that scrolls vertically inside its own box, with the bar hidden. `position: relative` is load-bearing: without it an `sr-only` label inside the region is positioned against the page and gives the whole screen a scrollbar. Use this — never a bare `overflow-y-auto`.",
+      "classes": [
+        "scroll-region"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-surface-title",
+      "purpose": "the title of an overlay surface — a dialog",
+      "classes": [
+        "type-surface-title"
+      ],
+      "value": "font-size: var(--step-18); font-weight: var(--weight-strong); line-height: var(--line-height-title)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "radix-ui": "1.8.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

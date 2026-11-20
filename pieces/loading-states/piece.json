@@ -1,0 +1,319 @@
+{
+  "files": [
+    "references/loading-states.md",
+    "packages/ui/src/components/busy-status.tsx",
+    "packages/ui/src/components/modal-shell.tsx",
+    "packages/ui/src/components/picker-dialog.tsx",
+    "packages/ui/src/components/record-mark.tsx",
+    "packages/ui/src/components/screen-skeleton.tsx",
+    "packages/ui/src/hooks/use-delayed-loading.ts",
+    "packages/web/src/nav/ScreenOutlet.tsx",
+    "packages/web/src/session/afterSignOut.ts",
+    "packages/web/src/session/useSignOut.ts"
+  ],
+  "pieces": [
+    "browse-columns",
+    "empty-state"
+  ],
+  "carriers": [
+    "BrowseTable",
+    "FormActions",
+    "FormShell",
+    "RowActions",
+    "browse-toolbar",
+    "confirm-dialog",
+    "entity-modal",
+    "option-switch",
+    "prompt-dialog",
+    "review-dialog",
+    "row-actions-menu",
+    "useBrowseData"
+  ],
+  "atoms": [
+    {
+      "name": "logger",
+      "file": "apps/shared/src/logger.ts",
+      "exports": [
+        "logger"
+      ]
+    },
+    {
+      "name": "alert",
+      "file": "packages/ui/src/components/ui/alert.tsx",
+      "exports": [
+        "Alert",
+        "AlertDescription"
+      ],
+      "piece": "alert",
+      "uses": {
+        "Alert": {
+          "variant": [
+            "destructive"
+          ]
+        }
+      }
+    },
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button"
+    },
+    {
+      "name": "dialog",
+      "file": "packages/ui/src/components/ui/dialog.tsx",
+      "exports": [
+        "Dialog",
+        "DialogContent",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogHeader",
+        "DialogTitle"
+      ],
+      "piece": "dialog",
+      "uses": {
+        "DialogContent": {
+          "size": [
+            "report"
+          ]
+        }
+      }
+    },
+    {
+      "name": "input",
+      "file": "packages/ui/src/components/ui/input.tsx",
+      "exports": [
+        "SearchInput"
+      ],
+      "piece": "input"
+    },
+    {
+      "name": "skeleton",
+      "file": "packages/ui/src/components/ui/skeleton.tsx",
+      "exports": [
+        "Skeleton"
+      ],
+      "piece": "skeleton",
+      "uses": {
+        "Skeleton": {
+          "shape": [
+            "field",
+            "row"
+          ]
+        }
+      }
+    },
+    {
+      "name": "spinner",
+      "file": "packages/ui/src/components/ui/spinner.tsx",
+      "exports": [
+        "Spinner"
+      ],
+      "piece": "spinner"
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--card",
+      "purpose": "a resting container that holds content, framed by a frame border",
+      "classes": [
+        "bg-card"
+      ]
+    },
+    {
+      "name": "--gap-default",
+      "purpose": "field to field, block to block, card to card",
+      "classes": [
+        "gap-default"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--gap-related",
+      "purpose": "buttons in a row, options in a group",
+      "classes": [
+        "gap-related"
+      ],
+      "value": "8px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-heading",
+      "purpose": "card, section and surface headings, and the text typed into a field",
+      "classes": [
+        "type-surface-heading"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--page-edge",
+      "purpose": "the page's edge, narrower on a phone than from a tablet up",
+      "classes": [
+        "p-page-edge"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--primary-ink",
+      "purpose": "the brand colour as text or a glyph on a surface — a link, a record's mark — readable in both themes where the brand fill itself is not",
+      "classes": [
+        "text-primary-ink"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-16",
+      "purpose": "",
+      "classes": [
+        "type-surface-heading"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "font-emphasis"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-surface-heading"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job. A frame is a container's edge and the splits and header bands between its sections. A line is a control's edge, an overlay's edge, and the rules between rows or items.",
+      "classes": [
+        "border-frame"
+      ]
+    },
+    {
+      "name": "border-t-frame",
+      "purpose": "",
+      "classes": [
+        "border-t-frame"
+      ]
+    },
+    {
+      "name": "scroll-region",
+      "purpose": "A region that scrolls vertically inside its own box, with the bar hidden. `position: relative` is load-bearing: without it an `sr-only` label inside the region is positioned against the page and gives the whole screen a scrollbar. Use this — never a bare `overflow-y-auto`.",
+      "classes": [
+        "scroll-region"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-surface-heading",
+      "purpose": "names a section inside an overlay surface — a step under the dialog's title, a step over its text",
+      "classes": [
+        "type-surface-heading"
+      ],
+      "value": "font-size: var(--step-16); font-weight: var(--weight-heading); line-height: var(--line-height-heading)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "@tanstack/react-query": "5.105.3",
+    "@tanstack/react-router": "1.170.46",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "apps/shared": "@design-pack/shared",
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/shared/logger": "apps/shared/src/logger.ts",
+    "@design-pack/ui/components/busy-status": "packages/ui/src/components/busy-status.tsx",
+    "@design-pack/ui/components/empty-state": "packages/ui/src/components/empty-state.tsx",
+    "@design-pack/ui/components/record-mark": "packages/ui/src/components/record-mark.tsx",
+    "@design-pack/ui/components/screen-skeleton": "packages/ui/src/components/screen-skeleton.tsx",
+    "@design-pack/ui/components/ui/alert": "packages/ui/src/components/ui/alert.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/dialog": "packages/ui/src/components/ui/dialog.tsx",
+    "@design-pack/ui/components/ui/input": "packages/ui/src/components/ui/input.tsx",
+    "@design-pack/ui/components/ui/skeleton": "packages/ui/src/components/ui/skeleton.tsx",
+    "@design-pack/ui/components/ui/spinner": "packages/ui/src/components/ui/spinner.tsx",
+    "@design-pack/ui/hooks/use-delayed-loading": "packages/ui/src/hooks/use-delayed-loading.ts",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

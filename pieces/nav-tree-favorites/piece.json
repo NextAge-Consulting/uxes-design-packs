@@ -1,0 +1,35 @@
+{
+  "files": [
+    "references/nav-tree-favorites.md",
+    "packages/web/src/nav/railState.ts"
+  ],
+  "pieces": [],
+  "carriers": [
+    "nav-tree"
+  ],
+  "atoms": [
+    {
+      "name": "logger",
+      "file": "apps/shared/src/logger.ts",
+      "exports": [
+        "logger"
+      ]
+    }
+  ],
+  "roles": [],
+  "packages": {
+    "@tanstack/react-query": "5.105.3",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "apps/shared": "@design-pack/shared",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/shared/logger": "apps/shared/src/logger.ts"
+  }
+}

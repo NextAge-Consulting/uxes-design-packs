@@ -1,0 +1,29 @@
+{
+  "files": [
+    "references/saving.md",
+    "packages/web/src/form/useSaveShortcut.ts"
+  ],
+  "pieces": [],
+  "carriers": [
+    "FormActions",
+    "FormShell",
+    "UnsavedChangesGuard",
+    "entity-modal",
+    "field",
+    "fields",
+    "prompt-dialog"
+  ],
+  "atoms": [],
+  "roles": [],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {}
+}

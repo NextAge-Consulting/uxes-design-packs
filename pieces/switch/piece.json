@@ -1,0 +1,96 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/switch.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--disabled",
+      "purpose": "the fill of a disabled control",
+      "classes": [
+        "bg-disabled"
+      ]
+    },
+    {
+      "name": "--disabled-border",
+      "purpose": "the border of a disabled control",
+      "classes": [
+        "border-disabled-border"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "bg-primary"
+      ]
+    },
+    {
+      "name": "--radius-pill",
+      "purpose": "a fully round end: an avatar, a switch, a radio",
+      "classes": [
+        "rounded-pill"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "border-ring",
+        "ring-ring/50"
+      ]
+    },
+    {
+      "name": "--switch-off",
+      "purpose": "a switch's track when off",
+      "classes": [
+        "bg-switch-off"
+      ]
+    },
+    {
+      "name": "--switch-thumb",
+      "purpose": "a switch's thumb when off",
+      "classes": [
+        "bg-switch-thumb"
+      ]
+    },
+    {
+      "name": "--switch-thumb-on",
+      "purpose": "a switch's thumb when on",
+      "classes": [
+        "bg-switch-thumb-on"
+      ]
+    },
+    {
+      "name": "border-line",
+      "purpose": "",
+      "classes": [
+        "border-line"
+      ]
+    }
+  ],
+  "packages": {
+    "radix-ui": "1.8.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

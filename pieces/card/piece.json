@@ -1,0 +1,190 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/card.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a 2px frame on a resting container and the splits between its sections, a 1px line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--card",
+      "purpose": "a resting container that holds content, framed by a 2px border",
+      "classes": [
+        "bg-card"
+      ]
+    },
+    {
+      "name": "--card-foreground",
+      "purpose": "text on a card",
+      "classes": [
+        "text-card-foreground"
+      ]
+    },
+    {
+      "name": "--gap-default",
+      "purpose": "field to field, block to block, card to card",
+      "classes": [
+        "gap-default"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-heading",
+      "purpose": "card, section and surface headings, and the text typed into a field",
+      "classes": [
+        "type-card-title"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--radius-container",
+      "purpose": "a container that HOLDS content: a card, a dialog, a menu",
+      "classes": [
+        "rounded-container",
+        "rounded-t-container"
+      ]
+    },
+    {
+      "name": "--shadow-sheet",
+      "purpose": "a card risen from the bottom edge of the screen — a bottom sheet — casts its shadow upward; the approved design value",
+      "classes": [
+        "shadow-sheet"
+      ]
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-18",
+      "purpose": "",
+      "classes": [
+        "type-card-title"
+      ],
+      "value": "18px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-card-title"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job (design.md → Elevation & Depth). A frame (2px) is a container's edge and the splits and header bands between its sections. A line (1px) is a control's edge, an overlay's edge, and the rules between rows or items. Use these — never a numbered border width.",
+      "classes": [
+        "border-frame"
+      ]
+    },
+    {
+      "name": "border-t-frame",
+      "purpose": "",
+      "classes": [
+        "border-t-frame"
+      ]
+    },
+    {
+      "name": "border-t-line",
+      "purpose": "",
+      "classes": [
+        "border-t-line"
+      ]
+    },
+    {
+      "name": "edge-panel",
+      "purpose": "A panel that rises from the bottom edge of the screen — a bottom sheet: its content stays clear of a phone's home indicator.",
+      "classes": [
+        "edge-panel"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-card-title",
+      "purpose": "the title of a card — the name of the whole card, a step above a heading inside it",
+      "classes": [
+        "type-card-title"
+      ],
+      "value": "font-size: var(--step-18); font-weight: var(--weight-heading); line-height: var(--line-height-heading)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

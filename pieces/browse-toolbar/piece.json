@@ -1,0 +1,253 @@
+{
+  "files": [
+    "packages/ui/src/components/browse-toolbar.tsx"
+  ],
+  "pieces": [
+    "browse-filtering",
+    "loading-states"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "badge",
+      "file": "packages/ui/src/components/ui/badge.tsx",
+      "exports": [
+        "Badge"
+      ],
+      "piece": "badge",
+      "uses": {
+        "Badge": {
+          "variant": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "variant": [
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "input",
+      "file": "packages/ui/src/components/ui/input.tsx",
+      "exports": [
+        "SearchInput"
+      ],
+      "piece": "input"
+    },
+    {
+      "name": "popover",
+      "file": "packages/ui/src/components/ui/popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverContent",
+        "PopoverTrigger"
+      ],
+      "piece": "popover",
+      "uses": {
+        "PopoverContent": {
+          "align": [
+            "start"
+          ],
+          "inset": [
+            "flush"
+          ]
+        }
+      }
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--card",
+      "purpose": "a resting container that holds content, framed by a frame border",
+      "classes": [
+        "bg-card"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-state-message"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-heading",
+      "purpose": "card, section and surface headings, and the text typed into a field",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-title",
+      "purpose": "a browse's or a dialog's title",
+      "classes": [
+        "type-browse-title"
+      ],
+      "value": "28px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--primary-muted",
+      "purpose": "a quiet brand tint — a selected row, a panel's header band, and the default badge's fill",
+      "classes": [
+        "bg-primary-muted"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-state-message"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-18",
+      "purpose": "",
+      "classes": [
+        "type-browse-title",
+        "type-section-heading"
+      ],
+      "value": "18px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--tracking-title",
+      "purpose": "the tightened tracking of the title roles — screen and browse titles",
+      "classes": [
+        "type-browse-title"
+      ]
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-state-message"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-title",
+      "purpose": "screen and browse titles only",
+      "classes": [
+        "type-browse-title"
+      ],
+      "value": "800",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-b-frame",
+      "purpose": "",
+      "classes": [
+        "border-b-frame"
+      ]
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job. A frame is a container's edge and the splits and header bands between its sections. A line is a control's edge, an overlay's edge, and the rules between rows or items.",
+      "classes": [
+        "border-frame"
+      ]
+    },
+    {
+      "name": "type-browse-title",
+      "purpose": "a browse's title, set in its toolbar row beside search and filters",
+      "classes": [
+        "type-browse-title"
+      ],
+      "value": "font-size: var(--step-18); font-weight: var(--weight-title); line-height: var(--line-height-title); letter-spacing: var(--tracking-title)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-section-heading",
+      "purpose": "names a region inside a card or panel — a form section, a group of settings",
+      "classes": [
+        "type-section-heading"
+      ],
+      "value": "font-size: var(--step-18); font-weight: var(--weight-heading); line-height: var(--line-height-heading)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-state-message",
+      "purpose": "what a region says when it has nothing, or is still arriving",
+      "classes": [
+        "type-state-message"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/busy-status": "packages/ui/src/components/busy-status.tsx",
+    "@design-pack/ui/components/ui/badge": "packages/ui/src/components/ui/badge.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/input": "packages/ui/src/components/ui/input.tsx",
+    "@design-pack/ui/components/ui/popover": "packages/ui/src/components/ui/popover.tsx"
+  }
+}

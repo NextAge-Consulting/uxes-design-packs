@@ -1,0 +1,171 @@
+{
+  "files": [
+    "packages/web/src/components/BrowseTable.tsx"
+  ],
+  "pieces": [
+    "ErrorState",
+    "browse-columns",
+    "loading-states",
+    "sortable-columns",
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "variant": [
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "skeleton",
+      "file": "packages/ui/src/components/ui/skeleton.tsx",
+      "exports": [
+        "Skeleton"
+      ],
+      "piece": "skeleton",
+      "uses": {
+        "Skeleton": {
+          "shape": [
+            "row"
+          ]
+        }
+      }
+    },
+    {
+      "name": "table",
+      "file": "packages/ui/src/components/ui/table.tsx",
+      "exports": [
+        "Table",
+        "TableBody",
+        "TableCell",
+        "TableHead",
+        "TableHeader",
+        "TableRow"
+      ],
+      "piece": "table",
+      "uses": {
+        "TableCell": {
+          "kind": [
+            "actions",
+            "detail",
+            "empty"
+          ]
+        },
+        "TableHead": {
+          "kind": [
+            "actions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--card",
+      "purpose": "a resting container that holds content, framed by a frame border",
+      "classes": [
+        "bg-card"
+      ]
+    },
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "text-feedback-danger"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted",
+      "purpose": "a quiet fill, and a row under the pointer inside a card — a nav item, an expandable row",
+      "classes": [
+        "bg-muted",
+        "from-muted/50",
+        "to-muted/50"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "bg-ring",
+        "bg-ring/40"
+      ]
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "@tanstack/react-table": "9.3.1",
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/sort-head": "packages/ui/src/components/sort-head.tsx",
+    "@design-pack/ui/components/table-frame": "packages/ui/src/components/table-frame.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/skeleton": "packages/ui/src/components/ui/skeleton.tsx",
+    "@design-pack/ui/components/ui/table": "packages/ui/src/components/ui/table.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts",
+    "@design-pack/web/components/ErrorState": "packages/web/src/components/ErrorState.tsx"
+  }
+}

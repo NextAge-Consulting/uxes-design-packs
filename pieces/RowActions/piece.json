@@ -1,0 +1,63 @@
+{
+  "files": [
+    "packages/web/src/components/RowActions.tsx"
+  ],
+  "pieces": [
+    "documents",
+    "loading-states",
+    "row-actions-menu",
+    "table-row-actions"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "spinner",
+      "file": "packages/ui/src/components/ui/spinner.tsx",
+      "exports": [
+        "Spinner"
+      ],
+      "piece": "spinner"
+    },
+    {
+      "name": "table",
+      "file": "packages/ui/src/components/ui/table.tsx",
+      "exports": [
+        "TableCell",
+        "TableHead"
+      ],
+      "piece": "table",
+      "uses": {
+        "TableCell": {
+          "kind": [
+            "actions"
+          ]
+        },
+        "TableHead": {
+          "kind": [
+            "actions"
+          ]
+        }
+      }
+    }
+  ],
+  "roles": [],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/busy-status": "packages/ui/src/components/busy-status.tsx",
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/row-actions-menu": "packages/ui/src/components/row-actions-menu.tsx",
+    "@design-pack/ui/components/ui/spinner": "packages/ui/src/components/ui/spinner.tsx",
+    "@design-pack/ui/components/ui/table": "packages/ui/src/components/ui/table.tsx"
+  }
+}

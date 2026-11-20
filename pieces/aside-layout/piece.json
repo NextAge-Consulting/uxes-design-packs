@@ -1,0 +1,45 @@
+{
+  "files": [
+    "references/aside-layout.md",
+    "packages/ui/src/components/aside-layout.tsx"
+  ],
+  "pieces": [
+    "browse-paging",
+    "page-heading"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--size-aside",
+      "purpose": "a page's side column beside its main column",
+      "classes": [
+        "grid-cols-[minmax(0,var(--size-aside))_minmax(0,1fr)]",
+        "var(--size-aside)"
+      ],
+      "value": "360px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

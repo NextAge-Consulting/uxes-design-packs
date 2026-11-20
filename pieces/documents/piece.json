@@ -1,0 +1,61 @@
+{
+  "files": [
+    "references/documents.md",
+    "packages/ui/src/components/report-link.tsx",
+    "packages/web/src/components/PdfPages.tsx"
+  ],
+  "pieces": [
+    "ErrorState",
+    "loading-states"
+  ],
+  "carriers": [
+    "RowActions",
+    "prompt-dialog"
+  ],
+  "atoms": [
+    {
+      "name": "logger",
+      "file": "apps/shared/src/logger.ts",
+      "exports": [
+        "logger"
+      ]
+    },
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button"
+    },
+    {
+      "name": "skeleton",
+      "file": "packages/ui/src/components/ui/skeleton.tsx",
+      "exports": [
+        "Skeleton"
+      ],
+      "piece": "skeleton"
+    }
+  ],
+  "roles": [],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "pdfjs-dist": "6.5.438",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "apps/shared": "@design-pack/shared",
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/shared/logger": "apps/shared/src/logger.ts",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/skeleton": "packages/ui/src/components/ui/skeleton.tsx",
+    "@design-pack/ui/hooks/use-delayed-loading": "packages/ui/src/hooks/use-delayed-loading.ts"
+  }
+}

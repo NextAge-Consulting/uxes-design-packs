@@ -1,0 +1,256 @@
+{
+  "files": [
+    "packages/ui/src/components/facet-tile.tsx",
+    "packages/ui/src/components/record-header.tsx",
+    "packages/ui/src/components/record-mark.tsx"
+  ],
+  "pieces": [
+    "stat-readout"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--card",
+      "purpose": "a resting container that holds content, framed by a frame border",
+      "classes": [
+        "bg-card"
+      ]
+    },
+    {
+      "name": "--card-foreground",
+      "purpose": "text on a card",
+      "classes": [
+        "text-card-foreground"
+      ]
+    },
+    {
+      "name": "--gap-figures",
+      "purpose": "headline figures side by side in a readout row",
+      "classes": [
+        "gap-figures"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-readout-caption"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-display",
+      "purpose": "the heading a screen opens with",
+      "classes": [
+        "type-screen-title"
+      ],
+      "value": "32px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "border-primary"
+      ]
+    },
+    {
+      "name": "--primary-ink",
+      "purpose": "the brand colour as TEXT or a glyph on a surface — a link, a record's mark. The fill above carries white text; in dark it is too deep to read as text itself, so this lifts it.",
+      "classes": [
+        "text-primary-ink"
+      ]
+    },
+    {
+      "name": "--primary-muted",
+      "purpose": "a quiet brand tint — a selected row, a panel's header band, and the default badge's fill",
+      "classes": [
+        "bg-primary-muted"
+      ]
+    },
+    {
+      "name": "--radius-container",
+      "purpose": "a container that HOLDS content: a card, a dialog, a menu",
+      "classes": [
+        "rounded-container"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-readout-caption"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-24",
+      "purpose": "",
+      "classes": [
+        "type-screen-title"
+      ],
+      "value": "24px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--tracking-title",
+      "purpose": "the tightened tracking of the title roles — screen and browse titles",
+      "classes": [
+        "type-screen-title"
+      ]
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "font-emphasis"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "type-readout-caption"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-title",
+      "purpose": "screen and browse titles only",
+      "classes": [
+        "type-screen-title"
+      ],
+      "value": "800",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job. A frame is a container's edge and the splits and header bands between its sections. A line is a control's edge, an overlay's edge, and the rules between rows or items.",
+      "classes": [
+        "border-frame"
+      ]
+    },
+    {
+      "name": "border-t-frame",
+      "purpose": "",
+      "classes": [
+        "border-t-frame"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-readout-caption",
+      "purpose": "names the value beneath it on a readout or a facet tile",
+      "classes": [
+        "type-readout-caption"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-heading); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-screen-title",
+      "purpose": "the heading a screen opens with — a form, a record, a landing page",
+      "classes": [
+        "type-screen-title"
+      ],
+      "value": "font-size: var(--step-24); font-weight: var(--weight-title); line-height: var(--line-height-display); letter-spacing: var(--tracking-title)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/facet-tile": "packages/ui/src/components/facet-tile.tsx",
+    "@design-pack/ui/components/record-mark": "packages/ui/src/components/record-mark.tsx",
+    "@design-pack/ui/components/stat-readout": "packages/ui/src/components/stat-readout.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

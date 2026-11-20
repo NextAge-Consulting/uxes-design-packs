@@ -1,0 +1,243 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/command.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--accent",
+      "purpose": "a highlighted menu row in an overlay; the light outline and ghost hovers take it",
+      "classes": [
+        "bg-accent"
+      ]
+    },
+    {
+      "name": "--accent-foreground",
+      "purpose": "text on an accent surface",
+      "classes": [
+        "text-accent-foreground"
+      ]
+    },
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a 2px frame on a resting container and the splits between its sections, a 1px line on controls and between rows",
+      "classes": [
+        "bg-border"
+      ]
+    },
+    {
+      "name": "--disabled-foreground",
+      "purpose": "text and icons on a disabled control",
+      "classes": [
+        "text-disabled-foreground"
+      ]
+    },
+    {
+      "name": "--foreground",
+      "purpose": "body text on the canvas",
+      "classes": [
+        "text-foreground"
+      ]
+    },
+    {
+      "name": "--gap-item-lines",
+      "purpose": "the lines of one item: an option's name and its description, a label and the note under it",
+      "classes": [
+        "gap-item-lines"
+      ],
+      "value": "2px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body",
+        "type-state-message"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the 11px and 12px roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--popover",
+      "purpose": "every true overlay — dialog, popover, dropdown — with shadow-overlay",
+      "classes": [
+        "bg-popover"
+      ]
+    },
+    {
+      "name": "--popover-foreground",
+      "purpose": "text on an overlay",
+      "classes": [
+        "text-popover-foreground"
+      ]
+    },
+    {
+      "name": "--radius-container",
+      "purpose": "a container that HOLDS content: a card, a dialog, a menu",
+      "classes": [
+        "rounded-container"
+      ]
+    },
+    {
+      "name": "--radius-control",
+      "purpose": "a thing that IS content: a button, a field, a nav item",
+      "classes": [
+        "rounded-control"
+      ]
+    },
+    {
+      "name": "--radius-stamp",
+      "purpose": "a mark inside content: a badge, a match highlight, a checkbox",
+      "classes": [
+        "rounded-stamp"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "border-ring"
+      ]
+    },
+    {
+      "name": "--size-control",
+      "purpose": "a field, a default button; 44px under a touch pointer",
+      "classes": [
+        "h-control"
+      ],
+      "value": "36px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body",
+        "type-state-message"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-body",
+        "type-metadata",
+        "type-state-message"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "font-emphasis"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "font-strong"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-b-line",
+      "purpose": "",
+      "classes": [
+        "border-b-line"
+      ]
+    },
+    {
+      "name": "scroll-region",
+      "purpose": "A region that scrolls vertically inside its own box, with the bar hidden. `position: relative` is load-bearing: without it an `sr-only` label inside the region is positioned against the page and gives the whole screen a scrollbar. Use this — never a bare `overflow-y-auto`.",
+      "classes": [
+        "scroll-region"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-metadata",
+      "purpose": "the secondary line beside or under a title — an email, a count, a range",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-state-message",
+      "purpose": "what a region says when it has nothing, or is still arriving",
+      "classes": [
+        "type-state-message"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "cmdk": "1.1.1",
+    "lucide-react": "0.563.0",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

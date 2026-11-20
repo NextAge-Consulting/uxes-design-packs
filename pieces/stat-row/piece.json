@@ -1,0 +1,30 @@
+{
+  "files": [
+    "packages/ui/src/components/stat-row.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [],
+  "roles": [
+    {
+      "name": "--gap-figures",
+      "purpose": "headline figures side by side in a readout row",
+      "classes": [
+        "gap-figures"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {}
+}

@@ -1,0 +1,23 @@
+{
+  "files": [
+    "references/browse-layout.md"
+  ],
+  "pieces": [
+    "BrowseTable",
+    "RowActions",
+    "browse-filtering",
+    "browse-paging",
+    "browse-toolbar",
+    "page-heading"
+  ],
+  "carriers": [],
+  "atoms": [],
+  "roles": [],
+  "packages": {},
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {},
+  "imports": {}
+}

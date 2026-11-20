@@ -1,0 +1,323 @@
+{
+  "files": [
+    "references/browse-filtering.md",
+    "packages/ui/src/components/filter-chips.tsx",
+    "packages/ui/src/components/view-tabs.tsx",
+    "packages/ui/src/hooks/use-chosen.ts",
+    "packages/web/src/browse/advancedFilter.ts",
+    "packages/web/src/components/AdvancedFilter.tsx"
+  ],
+  "pieces": [
+    "date-entry",
+    "field",
+    "loading-states",
+    "lookup-fields"
+  ],
+  "carriers": [
+    "browse-toolbar"
+  ],
+  "atoms": [
+    {
+      "name": "badge",
+      "file": "packages/ui/src/components/ui/badge.tsx",
+      "exports": [
+        "Badge"
+      ],
+      "piece": "badge"
+    },
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button",
+      "uses": {
+        "Button": {
+          "variant": [
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "checkbox",
+      "file": "packages/ui/src/components/ui/checkbox.tsx",
+      "exports": [
+        "Checkbox"
+      ],
+      "piece": "checkbox"
+    },
+    {
+      "name": "dialog",
+      "file": "packages/ui/src/components/ui/dialog.tsx",
+      "exports": [
+        "Dialog",
+        "DialogContent"
+      ],
+      "piece": "dialog",
+      "uses": {
+        "DialogContent": {
+          "size": [
+            "report"
+          ]
+        }
+      }
+    },
+    {
+      "name": "input",
+      "file": "packages/ui/src/components/ui/input.tsx",
+      "exports": [
+        "Input"
+      ],
+      "piece": "input"
+    },
+    {
+      "name": "label",
+      "file": "packages/ui/src/components/ui/label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "piece": "label",
+      "uses": {
+        "Label": {
+          "kind": [
+            "option"
+          ]
+        }
+      }
+    },
+    {
+      "name": "select",
+      "file": "packages/ui/src/components/ui/select.tsx",
+      "exports": [
+        "Select",
+        "SelectContent",
+        "SelectItem",
+        "SelectTrigger",
+        "SelectValue"
+      ],
+      "piece": "select"
+    },
+    {
+      "name": "switch",
+      "file": "packages/ui/src/components/ui/switch.tsx",
+      "exports": [
+        "Switch"
+      ],
+      "piece": "switch"
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--foreground",
+      "purpose": "body text on the canvas",
+      "classes": [
+        "text-foreground"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-button-label",
+        "type-field-label"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--line-height-caption",
+      "purpose": "the smallest type roles: metadata, badges, field errors, nav items, the status strip",
+      "classes": [
+        "type-badge",
+        "type-metadata"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--muted-foreground",
+      "purpose": "secondary text — hints, metadata. L .50 is the lightest that clears WCAG AA (4.5:1) on every surface muted text sits on, muted and accent included",
+      "classes": [
+        "text-muted-foreground"
+      ]
+    },
+    {
+      "name": "--primary",
+      "purpose": "the brand fill: the one primary action per view, the active nav item",
+      "classes": [
+        "border-primary"
+      ]
+    },
+    {
+      "name": "--primary-ink",
+      "purpose": "the brand colour as text or a glyph on a surface — a link, a record's mark — readable in both themes where the brand fill itself is not",
+      "classes": [
+        "bg-primary-ink/10",
+        "border-primary-ink",
+        "text-primary-ink"
+      ]
+    },
+    {
+      "name": "--primary-muted",
+      "purpose": "a quiet brand tint — a selected row, a panel's header band, and the default badge's fill",
+      "classes": [
+        "bg-primary-muted"
+      ]
+    },
+    {
+      "name": "--radius-pill",
+      "purpose": "a fully round end: an avatar, a switch, a radio",
+      "classes": [
+        "rounded-pill"
+      ]
+    },
+    {
+      "name": "--ring",
+      "purpose": "the focus ring",
+      "classes": [
+        "outline-ring"
+      ]
+    },
+    {
+      "name": "--step-12",
+      "purpose": "",
+      "classes": [
+        "type-badge",
+        "type-metadata"
+      ],
+      "value": "12px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-button-label",
+        "type-field-label"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-strong",
+      "purpose": "a row title, a field label, a button label, a badge, a dialog title",
+      "classes": [
+        "type-badge",
+        "type-button-label",
+        "type-field-label"
+      ],
+      "value": "600",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-b-frame",
+      "purpose": "",
+      "classes": [
+        "border-b-frame"
+      ]
+    },
+    {
+      "name": "border-b-line",
+      "purpose": "",
+      "classes": [
+        "border-b-line"
+      ]
+    },
+    {
+      "name": "border-line",
+      "purpose": "",
+      "classes": [
+        "border-line"
+      ]
+    },
+    {
+      "name": "type-badge",
+      "purpose": "a compact status or count mark",
+      "classes": [
+        "type-badge"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-strong); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-button-label",
+      "purpose": "the text on a button",
+      "classes": [
+        "type-button-label"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-strong); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-field-label",
+      "purpose": "the name of a field, above its control; also a fieldset's legend",
+      "classes": [
+        "type-field-label"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-strong); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "type-metadata",
+      "purpose": "the secondary line beside or under a title — an email, a count, a range",
+      "classes": [
+        "type-metadata"
+      ],
+      "value": "font-size: var(--step-12); font-weight: var(--weight-body); line-height: var(--line-height-caption)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "lucide-react": "0.563.0",
+    "react": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/combobox": "packages/ui/src/components/combobox.tsx",
+    "@design-pack/ui/components/date-field": "packages/ui/src/components/date-field.tsx",
+    "@design-pack/ui/components/field": "packages/ui/src/components/field.tsx",
+    "@design-pack/ui/components/modal-shell": "packages/ui/src/components/modal-shell.tsx",
+    "@design-pack/ui/components/ui/badge": "packages/ui/src/components/ui/badge.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/checkbox": "packages/ui/src/components/ui/checkbox.tsx",
+    "@design-pack/ui/components/ui/dialog": "packages/ui/src/components/ui/dialog.tsx",
+    "@design-pack/ui/components/ui/input": "packages/ui/src/components/ui/input.tsx",
+    "@design-pack/ui/components/ui/label": "packages/ui/src/components/ui/label.tsx",
+    "@design-pack/ui/components/ui/select": "packages/ui/src/components/ui/select.tsx",
+    "@design-pack/ui/components/ui/switch": "packages/ui/src/components/ui/switch.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

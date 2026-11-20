@@ -1,0 +1,247 @@
+{
+  "files": [
+    "packages/ui/src/components/ui/alert.tsx"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--feedback-danger",
+      "purpose": "an error message — a failed save, a field that will not take its value — as text",
+      "classes": [
+        "text-feedback-danger"
+      ]
+    },
+    {
+      "name": "--feedback-danger-border",
+      "purpose": "the border of an error callout",
+      "classes": [
+        "border-feedback-danger-border"
+      ]
+    },
+    {
+      "name": "--feedback-danger-muted",
+      "purpose": "an error callout's fill",
+      "classes": [
+        "bg-feedback-danger-muted"
+      ]
+    },
+    {
+      "name": "--feedback-info",
+      "purpose": "text of a neutral, informational callout — no outcome to signal, so it reads as page text",
+      "classes": [
+        "text-feedback-info"
+      ]
+    },
+    {
+      "name": "--feedback-info-border",
+      "purpose": "the border of an informational callout",
+      "classes": [
+        "border-feedback-info-border"
+      ]
+    },
+    {
+      "name": "--feedback-info-muted",
+      "purpose": "the fill of an informational callout — the recessed well",
+      "classes": [
+        "bg-feedback-info-muted"
+      ]
+    },
+    {
+      "name": "--feedback-notice",
+      "purpose": "text of a notice the reader must not miss that is not a problem — the \"new\" badge's brand ink",
+      "classes": [
+        "text-feedback-notice"
+      ]
+    },
+    {
+      "name": "--feedback-notice-border",
+      "purpose": "the border of a notice callout",
+      "classes": [
+        "border-feedback-notice-border"
+      ]
+    },
+    {
+      "name": "--feedback-notice-muted",
+      "purpose": "the fill of a notice callout",
+      "classes": [
+        "bg-feedback-notice-muted"
+      ]
+    },
+    {
+      "name": "--feedback-success",
+      "purpose": "a confirmation that something worked, as text",
+      "classes": [
+        "text-feedback-success"
+      ]
+    },
+    {
+      "name": "--feedback-success-border",
+      "purpose": "the border of a success callout",
+      "classes": [
+        "border-feedback-success-border"
+      ]
+    },
+    {
+      "name": "--feedback-success-muted",
+      "purpose": "a success callout's fill",
+      "classes": [
+        "bg-feedback-success-muted"
+      ]
+    },
+    {
+      "name": "--feedback-warning",
+      "purpose": "a caution about what just happened or is about to, as text",
+      "classes": [
+        "text-feedback-warning"
+      ]
+    },
+    {
+      "name": "--feedback-warning-border",
+      "purpose": "the border of a warning callout",
+      "classes": [
+        "border-feedback-warning-border"
+      ]
+    },
+    {
+      "name": "--feedback-warning-muted",
+      "purpose": "a warning callout's fill",
+      "classes": [
+        "bg-feedback-warning-muted"
+      ]
+    },
+    {
+      "name": "--gap-tight",
+      "purpose": "a title and its subline",
+      "classes": [
+        "gap-y-tight"
+      ],
+      "value": "4px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--icon-alert",
+      "purpose": "an alert's icon when the alert has no title",
+      "classes": [
+        "size-icon-alert"
+      ]
+    },
+    {
+      "name": "--icon-alert-titled",
+      "purpose": "an alert's icon beside a title and its text — the same line weight, drawn larger",
+      "classes": [
+        "size-icon-alert-titled"
+      ]
+    },
+    {
+      "name": "--line-height-body",
+      "purpose": "prose, rows, labels and controls",
+      "classes": [
+        "type-body"
+      ],
+      "value": "20px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--radius-container",
+      "purpose": "a container that HOLDS content: a card, a dialog, a menu",
+      "classes": [
+        "rounded-container"
+      ]
+    },
+    {
+      "name": "--size-alert-inset",
+      "purpose": "where an alert's text starts, clear of its icon: the alert's 12px side padding, the icon, a related gap. design-accepted — an alert is a compact banner inside a card, not a container of its own, so it keeps 12×8 rather than the container's 16 (Pete)",
+      "classes": [
+        "pl-alert-inset"
+      ],
+      "value": "calc(12px + var(--icon-alert) + var(--gap-related))",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-alert-inset-titled",
+      "purpose": "the same with a title, whose icon is larger",
+      "classes": [
+        "pl-alert-inset-titled"
+      ],
+      "value": "calc(12px + var(--icon-alert-titled) + var(--gap-related))",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--step-14",
+      "purpose": "",
+      "classes": [
+        "type-body"
+      ],
+      "value": "14px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-body",
+      "purpose": "running text, cells, hints, metadata",
+      "classes": [
+        "font-body",
+        "type-body"
+      ],
+      "value": "400",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-emphasis",
+      "purpose": "a column heading, a field error, a nav group, the status strip, a table footer",
+      "classes": [
+        "font-emphasis"
+      ],
+      "value": "500",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--weight-heading",
+      "purpose": "a card or section heading, a readout caption, a figure, initials",
+      "classes": [
+        "font-heading"
+      ],
+      "value": "700",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job (design.md → Elevation & Depth). A frame (2px) is a container's edge and the splits and header bands between its sections. A line (1px) is a control's edge, an overlay's edge, and the rules between rows or items. Use these — never a numbered border width.",
+      "classes": [
+        "border-frame"
+      ]
+    },
+    {
+      "name": "type-body",
+      "purpose": "prose — descriptions, list text, dialog text",
+      "classes": [
+        "type-body"
+      ],
+      "value": "font-size: var(--step-14); font-weight: var(--weight-body); line-height: var(--line-height-body)",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "class-variance-authority": "0.7.1",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "files": [
+    "packages/web/src/browse/useBrowseData.ts"
+  ],
+  "pieces": [
+    "browse-columns",
+    "browse-paging",
+    "loading-states"
+  ],
+  "carriers": [],
+  "atoms": [],
+  "roles": [],
+  "packages": {
+    "@tanstack/react-query": "5.105.3",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {}
+}

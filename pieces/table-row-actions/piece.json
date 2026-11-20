@@ -1,0 +1,90 @@
+{
+  "files": [
+    "references/table-row-actions.md",
+    "packages/ui/src/components/icon-button.tsx",
+    "packages/ui/src/components/table-frame.tsx",
+    "packages/web/src/components/IconLink.tsx"
+  ],
+  "pieces": [],
+  "carriers": [
+    "RowActions",
+    "confirm-dialog",
+    "row-actions-menu",
+    "table"
+  ],
+  "atoms": [
+    {
+      "name": "button",
+      "file": "packages/ui/src/components/ui/button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "piece": "button"
+    },
+    {
+      "name": "tooltip",
+      "file": "packages/ui/src/components/ui/tooltip.tsx",
+      "exports": [
+        "Tooltip",
+        "TooltipContent",
+        "TooltipTrigger"
+      ],
+      "piece": "tooltip"
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border",
+      "purpose": "frames and lines: a frame on a resting container and the splits between its sections, a line on controls and between rows",
+      "classes": [
+        "border-border"
+      ]
+    },
+    {
+      "name": "--card",
+      "purpose": "a resting container that holds content, framed by a frame border",
+      "classes": [
+        "bg-card"
+      ]
+    },
+    {
+      "name": "--radius-container",
+      "purpose": "a container that HOLDS content: a card, a dialog, a menu",
+      "classes": [
+        "rounded-container"
+      ]
+    },
+    {
+      "name": "border-frame",
+      "purpose": "The two line roles — every border is one of them, by its job. A frame is a container's edge and the splits and header bands between its sections. A line is a control's edge, an overlay's edge, and the rules between rows or items.",
+      "classes": [
+        "border-frame"
+      ]
+    }
+  ],
+  "packages": {
+    "@tanstack/react-router": "1.170.46",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/ui/components/icon-button": "packages/ui/src/components/icon-button.tsx",
+    "@design-pack/ui/components/ui/button": "packages/ui/src/components/ui/button.tsx",
+    "@design-pack/ui/components/ui/tooltip": "packages/ui/src/components/ui/tooltip.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}

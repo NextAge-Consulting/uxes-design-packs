@@ -1,0 +1,61 @@
+{
+  "files": [
+    "packages/web/src/components/ErrorState.tsx",
+    "packages/web/src/serverFn/userFacingError.ts"
+  ],
+  "pieces": [],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "userFacingError",
+      "file": "apps/shared/src/errors/userFacingError.ts",
+      "exports": [
+        "UserFacingError"
+      ]
+    },
+    {
+      "name": "alert",
+      "file": "packages/ui/src/components/ui/alert.tsx",
+      "exports": [
+        "Alert",
+        "AlertDescription"
+      ],
+      "piece": "alert",
+      "uses": {
+        "Alert": {
+          "variant": [
+            "destructive"
+          ]
+        }
+      }
+    }
+  ],
+  "roles": [
+    {
+      "name": "--page-edge",
+      "purpose": "the page's edge, narrower on a phone than from a tablet up",
+      "classes": [
+        "p-page-edge"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    }
+  ],
+  "packages": {
+    "@tanstack/react-router": "1.170.46",
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "apps/shared": "@design-pack/shared",
+    "packages/ui": "@design-pack/ui",
+    "packages/web": "@design-pack/web"
+  },
+  "imports": {
+    "@design-pack/shared/errors/userFacingError": "apps/shared/src/errors/userFacingError.ts",
+    "@design-pack/ui/components/ui/alert": "packages/ui/src/components/ui/alert.tsx"
+  }
+}

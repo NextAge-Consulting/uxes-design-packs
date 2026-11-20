@@ -1,0 +1,99 @@
+{
+  "files": [
+    "references/auth-layout.md",
+    "packages/ui/src/components/app-shell/auth-shell.tsx"
+  ],
+  "pieces": [
+    "aside-layout",
+    "loading-states"
+  ],
+  "carriers": [],
+  "atoms": [
+    {
+      "name": "card",
+      "file": "packages/ui/src/components/ui/card.tsx",
+      "exports": [
+        "Card"
+      ],
+      "piece": "card"
+    },
+    {
+      "name": "utils",
+      "file": "packages/ui/src/lib/utils.ts",
+      "exports": [
+        "cn"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "--border-subtle",
+      "purpose": "dividers inside a container",
+      "classes": [
+        "border-border-subtle"
+      ]
+    },
+    {
+      "name": "--page-edge",
+      "purpose": "the page's edge, narrower on a phone than from a tablet up",
+      "classes": [
+        "edge-page"
+      ],
+      "value": "16px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-auth-content",
+      "purpose": "the widest a signed-out page's content runs",
+      "classes": [
+        "max-w-auth-content"
+      ],
+      "value": "1000px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--size-footer-mark",
+      "purpose": "an image link in a signed-out page's footer, at the smallest size such a mark may be shown",
+      "classes": [
+        "h-footer-mark"
+      ],
+      "value": "40px",
+      "why": "A back office is compact by definition: its gaps, its field and row sizes, its text sizes and weights and its page edge are part of what it is."
+    },
+    {
+      "name": "--surface",
+      "purpose": "the canvas band behind cards — never a hover fill inside a card",
+      "classes": [
+        "bg-surface"
+      ]
+    },
+    {
+      "name": "border-t-frame",
+      "purpose": "",
+      "classes": [
+        "border-t-frame"
+      ]
+    },
+    {
+      "name": "edge-page",
+      "purpose": "A signed-out page's sides: the page edge in from each side, and clear of a phone's notch and rounded corners.",
+      "classes": [
+        "edge-page"
+      ]
+    }
+  ],
+  "packages": {
+    "react": "19.3.1"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "workspaces": {
+    "packages/ui": "@design-pack/ui"
+  },
+  "imports": {
+    "@design-pack/ui/components/ui/card": "packages/ui/src/components/ui/card.tsx",
+    "@design-pack/ui/lib/utils": "packages/ui/src/lib/utils.ts"
+  }
+}
